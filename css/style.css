@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px 20px;
+    flex: 1 0;
+    max-width: 30%;
+}
+li h1 {
+    font-weight: 400;
+    font-size: 120%;
+}
+li p {
+    font-size: 80%;
+}
+#header{
+    background:  linear-gradient(rgba(0, 0, 0, 0),black), url("../img/Wood.jpeg") no-repeat;
+    height: 100vh;
+    color: white;
+}
+#header-content{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+#header-content h1 {
+    margin-bottom: 30px;
+}
+
+#header-content div {
+    display: flex;
+    flex-direction: row;
+}
+#header-content a{
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+#header-content a::after{
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 9999;
+}
+#content {
+    padding: 0 80px;
+}
+
+section {
+    min-height: 100vh;
+}
