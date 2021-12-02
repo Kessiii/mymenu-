@@ -8,120 +8,140 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <script type="text/javascript" src="./js/fullpage.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="header">
-       
-        <div id="header-content">
-            <h1>Menu</h1>
-            <div>
-                <a href="#first-bites">First Bites</a>
-                <a href="#wood">Wood & Coal</a>
-                <a href="#dessert">Dessert</a>
-
+    <ul id="menu">
+        <li data-menuanchor="first-bites">
+            <a href="#first-bites">
+                <span></span>
+            </a>
+            <h3>First Bites</h3>
+        </li>
+        <li data-menuanchor="wood">
+            
+            
+            <a href="#wood">
+                <span></span>
+            </a>
+            <h3>Wood & Coal</h3>
+        </li>
+        <li data-menuanchor="dessert">
+            <a href="#dessert">
+                <span></span>
+            </a>
+            <h3>Dessert</h3>
+        </li>
+    </ul>
+    <button class="btn-reserve">Reserve Now</button>
+    <div id="fullpage">
+        <div id="header" class="section">
+        
+            <div id="header-content">
+                <h1>Foxy</h1>
             </div>
         </div>
-    </div>
-    <div id="content">
-        <section id="first-bites">
-            <h2>First Bites</h2>
-            <ul>
-                <li>
-                    <h1>Cauliflower - 16$</h1>
-                    <p>tumeric, yogurt and zhoug, fried shallots, almonds</p>
-                </li>
-                    
-                <li>
-                    <h1>Matane shrimp - 19$</h1>
-                    <p> green mole, avocado, cucumber, lime</p>
-                </li>
-                    
-                <li>
-                    <h1>Feta maison -17$</h1>
-                    <p>delicata squash, honeycrisp, hazelnuts, low and slow, apple butter, grilled bread</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h1>Autumn Coleslaw - 17$</h1>
-                    <p>charred romanesco, celeriac purée, pulled duck, parmesan</p>
-                </li>
-                    
-                <li>
-                    <h1>Seafood stew - 20$</h1>
-                    <p>littleneck clams, braised squid, coriander broth, chickpeas</p>
-                </li>
-            </div>
-            </ul>
-        </section>
-
-        <section id="wood">
-            <h2>Wood & Charcoal</h2>
-            <ul>
-                <li>Nordest farm hanger steak
-                    sucrine lettuce, bacon, ranch, bleu bénédictin
-                    $39
-                    New</li>
-                    
-                <li>Grilled 60 days ribsteak
-                    nordest farm, garlicky potatoes, porcini butter
-                    $45</li>
-                    
-                <li>Roast coquelet rose des vents
-                    decked-out honeynut squash, brown butter, maple, syrup
-                    $34
-                    New</li>
-            </ul>   
-            <ul>  
-                <li>Grilled nagano pork chop
-                    blistered sweet peppers, navy beans, crème fraîche, mash
-                    $34
-                    New</li>
-                    
-                <li>Charcoal grilled sea bass
-                    pearl couscous salade, yogourt and tahini sauce
-                    $45</li>
-            </ul>
-        </section> 
+        <div class="section">
+            <section id="section1">
+                <h2>First Bites</h2>
+                <ul>
+                    <li>
+                        <h1>Cauliflower - 16$</h1>
+                        <p>tumeric, yogurt and zhoug, fried shallots, almonds</p>
+                    </li>
+                        
+                    <li>
+                        <h1>Matane shrimp - 19$</h1>
+                        <p> green mole, avocado, cucumber, lime</p>
+                    </li>
+                        
+                    <li>
+                        <h1>Feta maison -17$</h1>
+                        <p>delicata squash, honeycrisp, hazelnuts, low and slow, apple butter, grilled bread</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Autumn Coleslaw - 17$</h1>
+                        <p>charred romanesco, celeriac purée, pulled duck, parmesan</p>
+                    </li>
+                        
+                    <li>
+                        <h1>Seafood stew - 20$</h1>
+                        <p>littleneck clams, braised squid, coriander broth, chickpeas</p>
+                    </li>
+                </ul>
+            </section>
+        </div> 
         
-        <section id="dessert">
-            <h2>Dessert</h2>
-            <ul>
-                <li>Strawberry frozen yogurt
-                wood oven roasted strawberries, lemon balm, meringue
-                $12</li>
 
-                <li>Pot de crème
-                chocolate and salty caramel, roasted peanuts, whipped cream, sponge toffee
-                $12</li>
+        <div class="section"> 
+            <section id="section2">
+                <h2>Wood & Charcoal</h2>
+                <ul>
+                    <li>Nordest farm hanger steak
+                        sucrine lettuce, bacon, ranch, bleu bénédictin
+                        $39
+                        New</li>
+                        
+                    <li>Grilled 60 days ribsteak
+                        nordest farm, garlicky potatoes, porcini butter
+                        $45</li>
+                        
+                    <li>Roast coquelet rose des vents
+                        decked-out honeynut squash, brown butter, maple, syrup
+                        $34
+                        New</li>
+                </ul>   
+                <ul>  
+                    <li>Grilled nagano pork chop
+                        blistered sweet peppers, navy beans, crème fraîche, mash
+                        $34
+                        New</li>
+                        
+                    <li>Charcoal grilled sea bass
+                        pearl couscous salade, yogourt and tahini sauce
+                        $45</li>
+                </ul>
+            </section>
+        </div> 
+        
+        <div class="section">
+            <section id="section3">
+                <h2>Dessert</h2>
+                <ul>
+                    <li>Strawberry frozen yogurt
+                    wood oven roasted strawberries, lemon balm, meringue
+                    $12</li>
 
-            <li>Blueberry tart
-                frangipane blueberry powder, lemon ice cream
-                $12</li>
-            </ul>
-            <ul>
-            <li>Strawberry tart
-                frangipane strwberry powder, lemon ice cream
-                $12</li>
+                    <li>Pot de crème
+                    chocolate and salty caramel, roasted peanuts, whipped cream, sponge toffee
+                    $12</li>
 
-            <li>Chocolate cake
-                chocolate, vanilla ice cream
-                $12</li>
-            </ul>
-        </section>
+                <li>Blueberry tart
+                    frangipane blueberry powder, lemon ice cream
+                    $12</li>
+                </ul>
+                <ul>
+                <li>Strawberry tart
+                    frangipane strwberry powder, lemon ice cream
+                    $12</li>
+
+                <li>Chocolate cake
+                    chocolate, vanilla ice cream
+                    $12</li>
+                </ul>
+            </section>
+        </div>
+        <div class="section fp-auto-height">
+            <footer>
+                <p>2018. Kestrel Villapando.</p>
+            </footer> 
+        </div>  
     </div>
-    <div>
-        <footer>
-            2018. Kestrel Villapando.
-        </footer> 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/script.js"/>
+    
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

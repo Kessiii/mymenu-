@@ -1,7 +1,5 @@
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top,
-    }, 1000, 'easeInOutSine');
+new fullpage('#fullpage', {
+	anchors: ['hero','first-bites', 'wood', 'dessert'],
+    menu: "#menu",
 });
+
