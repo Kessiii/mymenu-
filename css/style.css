@@ -133,5 +133,5 @@ footer {
     bottom: 20px;
     right: 20px;
     border-radius: 999px;
-    color: black;
+    color: black !important;
 }
